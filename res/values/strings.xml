@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Terrorist detection</string>
+
+    <string name="tap_for_take_a_photo">Tap to Take Photo</string>
+    <string name="camerademo_livecard_content">Camera Demo\nIs Currently Active</string>
+
+    <string name="title_activity_gesture_info">Camera Demo</string>
+    <string name="photosnapshot_screen_content">Snapshot Demo</string>
+
+    <!--  CameraDemoLocalService  -->
+    <string name="camerademo_localservice_started">Camera Demo Service started.</string>
+
+    <!--  For voice input  -->
+    <string name="camerademo_voice_trigger">start camera demo</string>
+    <string name="camerademo_voice_prompt">next action</string>
+
+    <!--  For menu  -->
+    <string name="menu_item_stop_camerademo">Stop</string>
+    
+    <string name="tap_for_back">Tap to Back</string>
+
+</resources>

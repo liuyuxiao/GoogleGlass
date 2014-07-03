@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gdkdemo.camera"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission
+     android:name="com.google.android.glass.permission.DEVELOPMENT" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_game_50"
+        android:label="@string/app_name"
+       >
+
+        <service android:name=".service.CameraDemoLocalService" />
+
+        <activity
+            android:name="com.gdkdemo.camera.CameraDemoActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- For testing -->
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <!-- For voice input -->
+                <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.glass.VoiceTrigger"
+                android:resource="@xml/voiceinput_camerademo" />
+        </activity>
+         <activity
+            android:name="com.gdkdemo.camera.PersonInfoActivity"
+            >
+        </activity>
+        
+        
+
+    </application>
+
+</manifest>
